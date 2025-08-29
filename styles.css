@@ -87,6 +87,33 @@ body {
     margin: 0 auto 2rem auto;
 }
 
+.hero-sponsors {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-sponsors a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.hero-sponsors a:hover {
+    color: #f1f5f9;
+    text-decoration: none;
+}
+
+.hero-sponsors a:visited {
+    color: #e2e8f0;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
 .hero-links {
     display: flex;
     gap: 1rem;
