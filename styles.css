@@ -151,6 +151,19 @@ body {
     border-color: white;
 }
 
+/* Hero buttons on white background sections */
+.schedule-section .hero-btn.secondary {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.schedule-section .hero-btn.secondary:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
 /* Schedule Section */
 .schedule-section {
     padding: 4rem 0;
