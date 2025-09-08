@@ -25,6 +25,18 @@ const speakerEvents = [
     },
     {
         id: 3,
+        speakerName: "Bharat Chandar",
+        speakerAffiliation: "Stanford",
+        speakerWebsite: "https://bharatchandar.com",
+        talkTitle: "TBA",
+        talkAbstract: "",
+        eventDate: "2025-10-7",
+        eventTime: "16:30",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: ""
+    },
+    {
+        id: 4,
         speakerName: "Stuart Russell",
         speakerAffiliation: "UC Berkeley",
         speakerWebsite: "https://people.eecs.berkeley.edu/~russell/",
@@ -36,7 +48,7 @@ const speakerEvents = [
         eventLink: ""
     },
     {
-        id: 4,
+        id: 5,
         speakerName: "Holly Elmore",
         speakerAffiliation: "PauseAI US",
         speakerWebsite: "https://hollyelmore.substack.com",
