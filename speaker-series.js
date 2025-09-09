@@ -26,7 +26,7 @@ const speakerEvents = [
     {
         id: 3,
         speakerName: "Bharat Chandar",
-        speakerAffiliation: "Stanford",
+        speakerAffiliation: "Stanford University",
         speakerWebsite: "https://bharatchandar.com",
         talkTitle: "TBA",
         talkAbstract: "",
@@ -55,6 +55,18 @@ const speakerEvents = [
         talkTitle: "TBA",
         talkAbstract: "",
         eventDate: "2025-11-04",
+        eventTime: "16:30",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: ""
+    },
+       {
+        id: 6,
+        speakerName: "Jessica Newman",
+        speakerAffiliation: "UC Berkeley",
+        speakerWebsite: "https://cltc.berkeley.edu/jessica-newman/",
+        talkTitle: "TBA",
+        talkAbstract: "",
+        eventDate: "2025-11-18",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
         eventLink: ""
