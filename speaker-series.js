@@ -74,7 +74,7 @@ const speakerEvents = [
 ];
 
 let events = [...speakerEvents];
-let currentFilter = 'upcoming'; // Default to upcoming events
+let currentFilter = 'all'; // Default to all events
 
 const scheduleGrid = document.getElementById('schedule-grid');
 const filterButtons = document.querySelectorAll('.filter-btn');
