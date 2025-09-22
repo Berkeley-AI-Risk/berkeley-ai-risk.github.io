@@ -9,7 +9,9 @@ const speakerEvents = [
         eventDate: "2025-09-09",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "https://www.youtube.com/watch?v=NX2YROCIJNQ&list=PLrFSj_PCtUNWCzrP1DHptbgVd_H8fDy9c&index=1",
+        slidesUrl: "slides/krueger-slides.pdf"
     },
     {
         id: 2,
@@ -21,7 +23,9 @@ const speakerEvents = [
         eventDate: "2025-09-23",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     },
     {
         id: 3,
@@ -33,7 +37,9 @@ const speakerEvents = [
         eventDate: "2025-10-7",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     },
     {
         id: 4,
@@ -45,7 +51,9 @@ const speakerEvents = [
         eventDate: "2025-10-21",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     },
     {
         id: 5,
@@ -53,11 +61,13 @@ const speakerEvents = [
         speakerAffiliation: "PauseAI US",
         speakerWebsite: "https://hollyelmore.substack.com",
         talkTitle: "The deep worldview and theory of change behind PauseAI, from a founder",
-        talkAbstract: "PauseAI co-founder and Dr. of Evolutionary Biology Holly Elmore lays out her deep worldview on genetic conflict, human society, and social change and explains how that is cashed out in PauseAI’s theory of change. PauseAI is for anyone who wants to pause AI development (and pledges nonviolence!). But PauseAI was organized according to the idea that the real AI danger isn’t simply a technical issue awaiting a bugfix. The problem is that we are developing machines of arbitrary intelligence. Arbitrary intelligence is arbitrary power, and the existence of such power will disrupt many societal equilibria, some we anticipate and who knows how many that we may not even be aware of. It may take many years to bring human society to the point where we can coexist comfortably with advanced AI, or human society may be fundamentally incompatible with superhuman AI. Whatever we do about advancing AI as a society must take all of these possibilities into account.",
+        talkAbstract: "PauseAI co-founder and Dr. of Evolutionary Biology Holly Elmore lays out her deep worldview on genetic conflict, human society, and social change and explains how that is cashed out in PauseAI's theory of change. PauseAI is for anyone who wants to pause AI development (and pledges nonviolence!). But PauseAI was organized according to the idea that the real AI danger isn't simply a technical issue awaiting a bugfix. The problem is that we are developing machines of arbitrary intelligence. Arbitrary intelligence is arbitrary power, and the existence of such power will disrupt many societal equilibria, some we anticipate and who knows how many that we may not even be aware of. It may take many years to bring human society to the point where we can coexist comfortably with advanced AI, or human society may be fundamentally incompatible with superhuman AI. Whatever we do about advancing AI as a society must take all of these possibilities into account.",
         eventDate: "2025-11-04",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     },
        {
         id: 6,
@@ -65,11 +75,13 @@ const speakerEvents = [
         speakerAffiliation: "UC Berkeley",
         speakerWebsite: "https://cltc.berkeley.edu/jessica-newman/",
         talkTitle: "Can we Manage the Risks of Frontier AI?",
-        talkAbstract: "The AI governance and risk management landscape has evolved with, for example, the release of The General-Purpose AI Code of Practice and at least a dozen frontier AI safety frameworks from leading AI companies. I will compare these developments to the shifting AI risk landscape and highlight key priorities to help developers, policymakers, and researchers stay a step ahead in order to realize AI’s benefits — and prevent its greatest harms.",
+        talkAbstract: "The AI governance and risk management landscape has evolved with, for example, the release of The General-Purpose AI Code of Practice and at least a dozen frontier AI safety frameworks from leading AI companies. I will compare these developments to the shifting AI risk landscape and highlight key priorities to help developers, policymakers, and researchers stay a step ahead in order to realize AI's benefits — and prevent its greatest harms.",
         eventDate: "2025-11-18",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
-        eventLink: ""
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     }
 ];
 
@@ -173,6 +185,8 @@ function createEventHTML(event) {
             <div class="event-details">
                 ${event.eventLocation ? `<div><strong>Location:</strong> ${escapeHtml(event.eventLocation)}</div>` : ''}
                 ${event.eventLink ? `<div><a href="${escapeHtml(event.eventLink)}" class="event-link" target="_blank" rel="noopener noreferrer">Join via Zoom</a></div>` : ''}
+                ${event.videoUrl ? `<div><a href="${escapeHtml(event.videoUrl)}" class="event-link" target="_blank" rel="noopener noreferrer">Watch Video</a></div>` : ''}
+                ${event.slidesUrl ? `<div><a href="${escapeHtml(event.slidesUrl)}" class="event-link" target="_blank" rel="noopener noreferrer">View Slides</a></div>` : ''}
             </div>
         </div>
     `;
