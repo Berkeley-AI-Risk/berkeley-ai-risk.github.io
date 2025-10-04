@@ -82,6 +82,20 @@ const speakerEvents = [
         eventLink: "",
         videoUrl: "",
         slidesUrl: ""
+    },
+       {
+        id: 7,
+        speakerName: "Deborah Raji",
+        speakerAffiliation: "UC Berkeley",
+        speakerWebsite: "https://rajiinio.github.io",
+        talkTitle: "Sociotechnical dimensions of AI Safety",
+        talkAbstract: "",
+        eventDate: "2025-12-02",
+        eventTime: "16:30",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
     }
 ];
 
