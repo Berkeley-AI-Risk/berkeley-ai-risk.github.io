@@ -148,19 +148,24 @@ function renderSchedule() {
 
 function filterEvents() {
     const now = new Date();
-    const today = now.toISOString().split('T')[0];
+    const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     
     return events.filter(event => {
+        const [year, month, day] = event.eventDate.split('-');
+        const eventDate = new Date(year, month - 1, day);
+        
         switch (currentFilter) {
             case 'upcoming':
-                return event.eventDate >= today;
+                return eventDate >= todayMidnight;
             case 'past':
-                return event.eventDate < today;
+                return eventDate < todayMidnight;
             default:
                 return true;
         }
     }).sort((a, b) => {
-        return new Date(a.eventDate) - new Date(b.eventDate);
+        const [yearA, monthA, dayA] = a.eventDate.split('-');
+        const [yearB, monthB, dayB] = b.eventDate.split('-');
+        return new Date(yearA, monthA - 1, dayA) - new Date(yearB, monthB - 1, dayB);
     });
 }
 
