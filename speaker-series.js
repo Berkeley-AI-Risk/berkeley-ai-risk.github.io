@@ -38,7 +38,7 @@ const speakerEvents = [
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
         eventLink: "",
-        videoUrl: "",
+        videoUrl: "https://www.youtube.com/watch?v=g6kV_6yqkJQ&list=PLrFSj_PCtUNWCzrP1DHptbgVd_H8fDy9c&index=1",
         slidesUrl: "slides/chandar-slides.pdf"
     },
     {
