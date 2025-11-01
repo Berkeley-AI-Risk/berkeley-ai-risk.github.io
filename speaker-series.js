@@ -52,8 +52,8 @@ const speakerEvents = [
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
         eventLink: "",
-        videoUrl: "",
-        slidesUrl: ""
+        videoUrl: "https://www.youtube.com/watch?v=9ITf6JilEAc&list=PLrFSj_PCtUNWCzrP1DHptbgVd_H8fDy9c&index=1",
+        slidesUrl: "slides/russell-slides.pdf"
     },
     {
         id: 5,
