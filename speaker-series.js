@@ -56,20 +56,6 @@ const speakerEvents = [
         slidesUrl: "slides/russell-slides.pdf"
     },
     {
-        id: 5,
-        speakerName: "Holly Elmore",
-        speakerAffiliation: "PauseAI US",
-        speakerWebsite: "https://hollyelmore.substack.com",
-        talkTitle: "The deep worldview and theory of change behind PauseAI, from a founder",
-        talkAbstract: "PauseAI co-founder and Dr. of Evolutionary Biology Holly Elmore lays out her deep worldview on genetic conflict, human society, and social change and explains how that is cashed out in PauseAI's theory of change. PauseAI is for anyone who wants to pause AI development (and pledges nonviolence!). But PauseAI was organized according to the idea that the real AI danger isn't simply a technical issue awaiting a bugfix. The problem is that we are developing machines of arbitrary intelligence. Arbitrary intelligence is arbitrary power, and the existence of such power will disrupt many societal equilibria, some we anticipate and who knows how many that we may not even be aware of. It may take many years to bring human society to the point where we can coexist comfortably with advanced AI, or human society may be fundamentally incompatible with superhuman AI. Whatever we do about advancing AI as a society must take all of these possibilities into account.",
-        eventDate: "2025-11-04",
-        eventTime: "16:30",
-        eventLocation: "621 Sutardja Dai Hall",
-        eventLink: "",
-        videoUrl: "",
-        slidesUrl: ""
-    },
-       {
         id: 6,
         speakerName: "Jessica Newman",
         speakerAffiliation: "UC Berkeley",
