@@ -64,7 +64,7 @@ const speakerEvents = [
         talkAbstract: "The AI governance and risk management landscape has evolved with, for example, the release of The General-Purpose AI Code of Practice and at least a dozen frontier AI safety frameworks from leading AI companies. I will compare these developments to the shifting AI risk landscape and highlight key priorities to help developers, policymakers, and researchers stay a step ahead in order to realize AI's benefits — and prevent its greatest harms.",
         eventDate: "2025-11-18",
         eventTime: "16:30",
-        eventLocation: "621 Sutardja Dai Hall",
+        eventLocation: "Zoom only",
         eventLink: "",
         videoUrl: "",
         slidesUrl: ""
