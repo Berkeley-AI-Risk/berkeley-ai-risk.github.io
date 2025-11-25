@@ -74,8 +74,8 @@ const speakerEvents = [
         speakerName: "Deborah Raji",
         speakerAffiliation: "UC Berkeley",
         speakerWebsite: "https://rajiinio.github.io",
-        talkTitle: "Sociotechnical dimensions of AI Safety",
-        talkAbstract: "",
+        talkTitle: "Safety, by any other name: Towards a sociotechnical view on AI Safety",
+        talkAbstract: "AI Safety is now a common term, used in a variety of regulatory, education and funding contexts. However, most formulations of 'AI safety' fail to capture a coherent picture of the socio-technical nature of AI systems, simultaneously under-estimating and over-estimating certain risks and impacts. In this talk, I'll share the perspective of those hoping to adopt this socio-technical view, and the implications for AI development, adoption and policymaking.",
         eventDate: "2025-12-02",
         eventTime: "16:30",
         eventLocation: "621 Sutardja Dai Hall",
@@ -96,7 +96,22 @@ const speakerEvents = [
         eventLink: "",
         videoUrl: "",
         slidesUrl: ""
-    }
+    },
+    {
+        id: 9,
+        speakerName: "Deirdre Mulligan",
+        speakerAffiliation: "UC Berkeley",
+        speakerWebsite: "https://www.ischool.berkeley.edu/people/deirdre-mulligan",
+        talkTitle: "",
+        talkAbstract: "",
+        eventDate: "2026-02-03",
+        eventTime: "16:00",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
+    
 ];
 
 let events = [...speakerEvents];
