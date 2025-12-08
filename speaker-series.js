@@ -111,6 +111,20 @@ const speakerEvents = [
         videoUrl: "",
         slidesUrl: ""
     },
+        {
+        id: 10,
+        speakerName: "Jacob Steinhardt",
+        speakerAffiliation: "UC Berkeley",
+        speakerWebsite: "https://jsteinhardt.stat.berkeley.edu",
+        talkTitle: "",
+        talkAbstract: "",
+        eventDate: "2026-03-03",
+        eventTime: "16:00",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
     
 ];
 
