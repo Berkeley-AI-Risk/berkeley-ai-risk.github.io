@@ -141,6 +141,20 @@ const speakerEvents = [
     },
         {
         id: 12,
+        speakerName: "Helen Toner",
+        speakerAffiliation: "Center for Security and Emerging Technology, Georgetown University",
+        speakerWebsite: "https://cset.georgetown.edu/staff/helen-toner/",
+        talkTitle: "",
+        talkAbstract: "",
+        eventDate: "2026-03-05",
+        eventTime: "17:00",
+        eventLocation: "Banatao Auditorium, Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
+        {
+        id: 13,
         speakerName: "Chad Jones",
         speakerAffiliation: "Stanford University",
         speakerWebsite: "https://web.stanford.edu/~chadj/",
@@ -154,7 +168,7 @@ const speakerEvents = [
         slidesUrl: ""
     },
          {
-        id: 13,
+        id: 14,
         speakerName: "Beatrice Erkers",
         speakerAffiliation: "Foresight Institute",
         speakerWebsite: "https://www.existentialhope.com/team/beatrice-erkers",
