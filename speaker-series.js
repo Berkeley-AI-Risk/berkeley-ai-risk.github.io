@@ -148,7 +148,7 @@ const speakerEvents = [
         talkAbstract: 'China looms large in US conversations about AI policy. But often the stories that spread about Chinese AI are oversimplified—"China is poised to overtake the US in the AI race," "DeepSeek proved that chip export controls have failed," "AI is one area where the US and China should obviously cooperate." Since reality is usually more complicated, this talk, featuring Helen Toner (Georgetown CSET) in conversation with Rachel Stern (Berkeley Law), will run through some common narratives about AI in China, compare them against the available evidence, and draw conclusions for the US AI ecosystem.',
         eventDate: "2026-03-05",
         eventTime: "17:00",
-        eventLocation: "Banatao Auditorium, Sutardja Dai Hall",
+        eventLocation: "306 Soda Hall",
         eventLink: "",
         videoUrl: "",
         slidesUrl: ""
