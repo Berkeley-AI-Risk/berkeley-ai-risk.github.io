@@ -181,6 +181,20 @@ const speakerEvents = [
         videoUrl: "",
         slidesUrl: ""
     },
+     {
+        id: 15,
+        speakerName: "John Sherman",
+        speakerAffiliation: "The AI Risk Network",
+        speakerWebsite: "https://www.youtube.com/@TheAIRiskNetwork",
+        talkTitle: "TBA",
+        talkAbstract: "",
+        eventDate: "2026-09-22",
+        eventTime: "16:00",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
     
 ];
 
