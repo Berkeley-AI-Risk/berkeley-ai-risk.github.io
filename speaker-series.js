@@ -158,7 +158,7 @@ const speakerEvents = [
         speakerName: "Chad Jones",
         speakerAffiliation: "Stanford University",
         speakerWebsite: "https://web.stanford.edu/~chadj/",
-        talkTitle: "AI and our Economic Future",
+        talkTitle: "AI and Our Economic Future",
         talkAbstract: "Artificial intelligence (A.I.) will likely be the most important technology we have ever developed. Technologies such as electricity, semiconductors, and the internet have been transformative, reshaping economic activity and dramatically increasing living standards throughout the world. In some sense, artificial intelligence is simply the latest of these general purpose technologies and at a minimum should continue the economic transformation that has been ongoing for the past century. However, the case can certainly be made that this time is different. Automating intelligence itself arguably has broader effects than electricity or semiconductors. What if machines—A.I. for cognitive tasks and A.I. plus advanced robots for physical tasks—can perform every task a human can do but more cheaply? What does economics have to say about this possibility, and what might our economic future look like?",
         eventDate: "2026-04-14",
         eventTime: "16:00",
