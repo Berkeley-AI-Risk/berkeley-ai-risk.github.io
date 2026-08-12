@@ -183,6 +183,20 @@ const speakerEvents = [
     },
      {
         id: 15,
+        speakerName: "Nate Soares",
+        speakerAffiliation: "MIRI",
+        speakerWebsite: "https://intelligence.org/team/nate-soares/",
+        talkTitle: "Stop the Race to Superintelligence",
+        talkAbstract: "Machines are resolving long-standing mathematical conjectures, generating novel scientific research, and carrying out cyberattacks on their own initiative. The leading AI laboratories say that their goal is to build AI systems that surpass humans at every cognitive task. Drawing on his book with Eliezer Yudkowsky, If Anyone Builds It, Everyone Dies, Nate Soares (President, Machine Intelligence Research Institute) argues that the current AI trajectory would predictably end in human extinction, not because the AI will hate us but because it simply won't care, and will pursue other strange drives. But all is not lost: the dangerous sort of AI does not exist yet, and there is ample time to change the trajectory and avert catastrophe.",
+        eventDate: "2026-09-08",
+        eventTime: "16:00",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
+     {
+        id: 16,
         speakerName: "John Sherman",
         speakerAffiliation: "The AI Risk Network",
         speakerWebsite: "https://www.youtube.com/@TheAIRiskNetwork",
