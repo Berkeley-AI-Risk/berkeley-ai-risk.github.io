@@ -209,6 +209,20 @@ const speakerEvents = [
         videoUrl: "",
         slidesUrl: ""
     },
+     {
+        id: 17,
+        speakerName: "Emma Pierson",
+        speakerAffiliation: "UC Berkeley",
+        speakerWebsite: "https://vcresearch.berkeley.edu/faculty/emma-pierson",
+        talkTitle: "TBA",
+        talkAbstract: "",
+        eventDate: "2026-11-17",
+        eventTime: "16:00",
+        eventLocation: "621 Sutardja Dai Hall",
+        eventLink: "",
+        videoUrl: "",
+        slidesUrl: ""
+    },
     
 ];
 
