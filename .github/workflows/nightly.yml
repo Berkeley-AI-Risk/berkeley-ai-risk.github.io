@@ -1,0 +1,22 @@
+# Starts the deploy workflow once a day so finished talks move from "upcoming"
+# to "past" in the pre-rendered pages. It is separate from static.yml because
+# GitHub pauses scheduled workflows after 60 days without repository activity,
+# and a pause here must never block deploys on push.
+name: Nightly rebuild
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # 2:17 a.m. PDT / 1:17 a.m. PST
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start the deploy workflow
+        run: gh workflow run static.yml --repo "$GITHUB_REPOSITORY" --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

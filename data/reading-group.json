@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Two divergent views on where we are heading",
+    "date": "2025-06-03",
+    "time": "13:00",
+    "location": "Barker 101",
+    "presenter": "Wes Holliday",
+    "readings": "Readings: Chapters 1-7 of <a href=\"https://keepthefuturehuman.ai/essay/docs\" target=\"_blank\" rel=\"noopener\">Keep The Future Human</a>, by Anthony Aguirre; Parts I-III of <a href=\"https://knightcolumbia.org/content/ai-as-normal-technology\" target=\"_blank\" rel=\"noopener\">AI as Normal Technology</a>, by Arvind Narayanan and Sayash Kapoor"
+  },
+  {
+    "title": "Even if near-term risks are averted, will AI gradually disempower humanity?",
+    "date": "2025-06-17",
+    "time": "13:00",
+    "location": "Davis 534",
+    "presenter": "Will Fithian",
+    "readings": "Reading: <a href=\"https://gradual-disempowerment.ai\" target=\"_blank\" rel=\"noopener\">Gradual Disempowerment</a> by Jan Kulveit et al."
+  },
+  {
+    "title": "How long will it be before AI is very powerful?",
+    "date": "2025-07-01",
+    "time": "13:00",
+    "location": "Davis 534",
+    "presenter": "Adam Lesnikowski",
+    "readings": "Primary readings: <a href=\"https://benjamintodd.substack.com/p/the-case-for-agi-by-2030\" target=\"_blank\" rel=\"noopener\">The case for AGI by 2030</a> by Ben Todd; <a href=\"https://thegradient.pub/why-transformative-artificial-intelligence-is-really-really-hard-to-achieve/\" target=\"_blank\" rel=\"noopener\">Why transformative artificial intelligence is really, really hard to achieve</a> by Arjun Ramani and Zhengdong Wang"
+  },
+  {
+    "title": "Alignment faking",
+    "date": "2025-07-15",
+    "time": "13:00",
+    "location": "Davis 534",
+    "presenter": "Arpita Roy, Will Fithian",
+    "readings": "Primary readings: <a href=\"https://www.anthropic.com/research/alignment-faking\" target=\"_blank\" rel=\"noopener\">Alignment faking in large language models</a> by Greenblatt et al.; <a href=\"https://www2.csudh.edu/ccauthen/576f12/frankfurt__harry_-_on_bullshit.pdf\" target=\"_blank\" rel=\"noopener\">On Bullshit</a> by Harry Frankfurt"
+  },
+  {
+    "title": "Strategic Implications of AI-Military Integration",
+    "date": "2025-07-29",
+    "time": "13:00",
+    "location": "Evans 334",
+    "presenter": "Andrew Reddie",
+    "readings": "Primary reading: Function, Not Fiction: Rethinking AI-Military Integration"
+  },
+  {
+    "title": "Autonomous Weapons Systems",
+    "date": "2025-08-12",
+    "time": "13:00",
+    "location": "Evans 334",
+    "presenter": "Chris Hoofnagle",
+    "readings": "Primary reading: AI in the Military"
+  }
+]
