@@ -224,22 +224,6 @@
     "slidesUrl": null
   },
   {
-    "slug": "john-sherman",
-    "speaker": "John Sherman",
-    "affiliation": "The AI Risk Network",
-    "website": "https://www.youtube.com/@TheAIRiskNetwork",
-    "linkedin": null,
-    "headshot": "assets/speakers/john-sherman.webp",
-    "title": "TBA",
-    "abstract": null,
-    "date": "2026-09-22",
-    "time": "16:00",
-    "durationMinutes": 90,
-    "location": "621 Sutardja Dai Hall",
-    "videoId": null,
-    "slidesUrl": null
-  },
-  {
     "slug": "emma-pierson",
     "speaker": "Emma Pierson",
     "affiliation": "UC Berkeley",
