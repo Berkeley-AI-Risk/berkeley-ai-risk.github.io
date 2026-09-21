@@ -224,6 +224,22 @@
     "slidesUrl": null
   },
   {
+    "slug": "jacy-reese-anthis",
+    "speaker": "Jacy Reese Anthis",
+    "affiliation": "University of Chicago",
+    "website": "https://jacyanthis.com",
+    "linkedin": null,
+    "headshot": "assets/speakers/jacy-reese-anthis.jpg",
+    "title": "TBA",
+    "abstract": null,
+    "date": "2026-10-06",
+    "time": "16:00",
+    "durationMinutes": 90,
+    "location": "621 Sutardja Dai Hall",
+    "videoId": null,
+    "slidesUrl": null
+  },
+  {
     "slug": "emma-pierson",
     "speaker": "Emma Pierson",
     "affiliation": "UC Berkeley",
