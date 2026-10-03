@@ -240,6 +240,22 @@
     "slidesUrl": null
   },
   {
+    "slug": "john-sherman",
+    "speaker": "John Sherman",
+    "affiliation": "The AI Risk Network",
+    "website": "https://www.youtube.com/@TheAIRiskNetwork",
+    "linkedin": null,
+    "headshot": "assets/speakers/john-sherman.webp",
+    "title": "The Day After Coxon Day: Where Do We Go From Here?",
+    "abstract": "AI Safety had been focused on getting the message out to the world about extinction risk and failing, badly, until September 9th 2026, and everything changed in a day. But then the counter-attacks came: it's a hoax, it's a psy-op, don't believe it. So where do we go from here? John Sherman works at the intersection of AI safety world and the general public, cross-pollinating the two with his YouTube channel, The AI Risk Network, and his non-profit GuardRailNow. John is recently back from PauseCon in London and FLI's Pro-Human Assembly 2026 in DC with a fresh outlook on the road ahead.",
+    "date": "2026-10-20",
+    "time": "16:00",
+    "durationMinutes": 90,
+    "location": "621 Sutardja Dai Hall",
+    "videoId": null,
+    "slidesUrl": null
+  },
+  {
     "slug": "emma-pierson",
     "speaker": "Emma Pierson",
     "affiliation": "UC Berkeley",
