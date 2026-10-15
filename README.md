@@ -74,18 +74,28 @@ Visitors subscribe to the series' public Google Calendar, "Berkeley AI Risk Spea
 
 The build publishes the talks as `events.json`. The Google Apps Script in `tools/google-calendar-sync.gs` reads that file every hour and, for talks that haven't ended:
 
-- adds an event for each new talk,
-- updates the title, time, location and description of talks that changed,
+- adds an event for each new talk and invites the guests,
+- invites guests who are missing from an event it already made,
+- changes a title, abstract or venue quietly, without emailing anyone,
+- emails the guests when a talk moves to a new date or time, or is cancelled,
 - deletes events it created for upcoming talks that were removed from the site.
 
 It leaves past events, recurring events and events it didn't create alone, except that a one-off event already in the calendar at a talk's exact start time is taken over instead of duplicated.
 
-Set it up once, signed in to a Google account that can make changes to the calendar, after the site with `events.json` is live:
+Guests are invited as whole addresses, so the announcement list counts as a single guest and no subscriber's address is exposed. Because every invitation reaches the whole list, the script stays silent for ordinary edits and only writes to people when the plan itself changes.
+
+### Setting it up
+
+Signed in to a Google account that can make changes to the calendar, and that can post to and view the members of the announcement list:
 
 1. Go to https://script.google.com and create a new project (for example, "Berkeley AI Risk calendar sync").
 2. Replace the contents of `Code.gs` with the contents of `tools/google-calendar-sync.gs`, and save.
-3. Choose `installHourlyTrigger` in the function menu and click **Run**. Approve the requested access to Google Calendar and to external URLs.
-4. Open **Executions** and check the log, for example "Created 2, updated 0, removed 0."
+3. Next to **Services**, click **+** and add **Google Calendar API**. That service is what lets the script send or withhold guest email for each kind of change.
+4. In **Project Settings → Script properties**, add:
+   - `guests`: who to invite, comma separated, currently `ai-risk-announce@lists.berkeley.edu, wfithian@berkeley.edu`. Leave it unset to create events with no guests.
+   - `dryRun`: set to `1` to have a run log what it would do without changing anything or emailing anyone. Remove it to go live.
+5. Choose `syncTalks` and click **Run**, then read **Executions**. With `dryRun` set, the log shows lines such as "Would have: added john-sherman and invited …".
+6. Remove `dryRun`, choose `installHourlyTrigger`, and click **Run**. Approve the requested access to Google Calendar and to external URLs.
 
 The script then runs every hour under that account. If a run fails, for example while the site is unreachable, it changes nothing and Google emails the account. If the script in this repository changes, paste the new version into the project.
 
