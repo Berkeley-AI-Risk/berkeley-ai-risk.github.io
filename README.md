@@ -46,6 +46,7 @@ Then open http://127.0.0.1:4184/. When you build locally, commit the generated f
 - `styles.css`: responsive visual design.
 - `app.js`: calendar menus, mailing-list form, video playback and elapsed-talk handling.
 - `speaker-series.html`: redirect from the address of the old speaker-series page, which is linked from emails and other sites.
+- `talk/<slug>/index.html`: a share page per talk. Posting `https://ai-risk.berkeley.edu/talk/<slug>` in Slack, email or chat previews that talk — speaker, title, date, venue, abstract and the speaker's photo — and sends anyone who clicks to the talk on the home page. The pages are rebuilt from scratch on every build and are not indexed.
 - `slides/`: talk slides linked from `data/talks.json`.
 - `.github/workflows/`: `static.yml` builds and deploys; `nightly.yml` starts it once a day.
 - `CNAME` and `.nojekyll`: used only if Pages is switched back to "Deploy from a branch". With the GitHub Actions source, the custom domain is set in Settings → Pages.
@@ -103,6 +104,6 @@ The script then runs every hour under that account. If a run fails, for example 
 
 Portraits, video thumbnails, fonts and Berkeley marks are self-hosted. YouTube is contacted only after a visitor requests playback.
 
-- John Sherman: portrait published on https://www.guardrailnow.org/about, downloaded without alteration. CSS crops it to fit the portrait frame.
+- John Sherman: portrait published on https://www.guardrailnow.org/about, cropped square like the other headshots.
 
 Organizer links use labeled icons for email, websites, LinkedIn and Twitter/X. Kavli uses a text wordmark.

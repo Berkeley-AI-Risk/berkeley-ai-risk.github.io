@@ -26,8 +26,13 @@ const read = (p) => {
     process.exit(1);
   }
 };
+const writeQuiet = (p, s) => {
+  fs.mkdirSync(path.dirname(path.join(ROOT, p)), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, p), s.replace(/[ \t]+$/gm, ""));
+};
 const write = (p, s) => {
   if (p.endsWith(".html")) s = s.replace(/[ \t]+$/gm, "");
+  fs.mkdirSync(path.dirname(path.join(ROOT, p)), { recursive: true });
   fs.writeFileSync(path.join(ROOT, p), s);
   console.log(`  ${p.padEnd(24)} ${String(Buffer.byteLength(s)).padStart(7)} bytes`);
 };
@@ -651,6 +656,50 @@ function redirectPage(target) {
 `;
 }
 
+/* --- talk/<slug>/index.html ------------------------------------------------ */
+
+// One small page per talk, so a link dropped into Slack, email or a chat
+// previews that talk rather than the site as a whole. Visitors are sent on to
+// the talk itself; the page is not indexed, and the home page stays canonical.
+function sharePage(t) {
+  const shareUrl = `${site.canonical}talk/${t.slug}`;
+  const target = `${site.canonical}#${t.slug}`;
+  const image = hasPhoto(t) ? site.canonical + t.headshot : `${site.canonical}assets/og.png`;
+  const when = `${t.longDate}, ${t.timeLabel} PT · ${t.location}`;
+  const blurb = t.description ? t.description.replace(/\s+/g, " ").trim() : "";
+  const description = `${when}${blurb ? ` · ${blurb}` : ""}`.slice(0, 300).replace(/\s+\S*$/, "") + (blurb.length > 220 ? "…" : "");
+  const heading = `${t.speaker} — ${t.title}`;
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(heading)}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="${attr(target)}">
+<meta name="description" content="${attr(description)}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="${attr(site.name)} speaker series">
+<meta property="og:title" content="${attr(heading)}">
+<meta property="og:description" content="${attr(description)}">
+<meta property="og:url" content="${attr(shareUrl)}">
+<meta property="og:image" content="${attr(image)}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta http-equiv="refresh" content="0; url=${attr(target)}">
+<script>location.replace(${JSON.stringify(target)});</script>
+</head>
+<body>
+<h1>${esc(heading)}</h1>
+<p>${esc(t.affiliation || "")}</p>
+<p>${esc(when)}</p>
+${t.abstract || ""}
+<p><a href="${attr(target)}">Continue to ${esc(site.name)}</a></p>
+</body>
+</html>
+`;
+}
 /* --- events.json ----------------------------------------------------------- */
 
 // Read by tools/google-calendar-sync.gs, which copies the talks into the
@@ -699,6 +748,9 @@ write("reading-group.html", readingPage());
 write("404.html", rootRelative(notFoundPage()));
 write("speaker-series.html", redirectPage("./#upcoming"));
 write("events.json", eventsFeed());
+fs.rmSync(path.join(ROOT, "talk"), { recursive: true, force: true });
+for (const t of all) writeQuiet(`talk/${t.slug}/index.html`, sharePage(t));
+console.log(`  ${"talk/<slug>/index.html".padEnd(24)} ${String(all.length).padStart(7)} share pages`);
 if (ownsRoot() && !site.noindex) {
   write("sitemap.xml", sitemap());
   write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.canonical}sitemap.xml\n`);
