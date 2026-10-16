@@ -941,6 +941,11 @@ section {
   width:180px;
 }
 
+.sponsors img[data-l=basis] {
+  width:112px;
+  max-height:48px;
+}
+
 .wordmark {
   display:block;
   line-height:1.2;

@@ -61,7 +61,7 @@ The home page puts the next speaker immediately after a blue-and-gold typographi
 
 Past talks form a chronological index grouped by semester. Native HTML disclosure controls reveal each recording and abstract. Opening a talk does not start a video; the visitor explicitly selects the play button. Closing a talk stops its player. Direct links such as `#stuart-russell` open the corresponding archive entry.
 
-The reading group has its own page. The sponsor row includes CDSS, Kavli, and BRSL.
+The reading group has its own page. The sponsor row includes CDSS, Kavli, BRSL, and BASIS.
 
 ## Mailing list
 

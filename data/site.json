@@ -131,6 +131,13 @@
       "url": "https://brsl.berkeley.edu",
       "logo": "assets/logos/brsl.svg",
       "key": "brsl"
+    },
+    {
+      "name": "Berkeley AI Safety Student Initiative (BASIS)",
+      "short": "BASIS",
+      "url": "https://berkeleyaisafety.com",
+      "logo": "assets/logos/basis-bear-lockup.png",
+      "key": "basis"
     }
   ],
   "accessibility": "If you require an accommodation in order to fully participate in an event, please contact Will Fithian (wfithian@berkeley.edu) with as much advance notice as possible, at least 5 days before the event.",
